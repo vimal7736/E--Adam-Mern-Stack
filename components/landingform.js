@@ -68,9 +68,22 @@ export default function LandingForm() {
         <label htmlFor='destination' className='mt-4 mb-2 font-bold'>
           Cargo:
         </label>
-        <br />
 
         <CargoDropdown></CargoDropdown>
+
+        <br />
+        <div className='mt-4 mb-2 font-bold'>
+          <Link href={'/registration'}>
+            <a>
+              <button
+                type='submit'
+                className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+              >
+                Get Rates
+              </button>
+            </a>
+          </Link>
+        </div>
 
         {/* <button
           type='button'
@@ -79,26 +92,14 @@ export default function LandingForm() {
         >
           Search Rates
         </button> */}
-        <br />
-        <br />
-        <Link href={'/registration'}>
-          <a>
-            <button
-              type='submit'
-              className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
-            >
-              Register Your Service
-            </button>
-          </a>
-        </Link>
       </form>
 
-      {shippingRate !== null && (
+      {/* {shippingRate !== null && (
         <div className='mt-4'>
           <p className='font-bold'>Best Rate:</p>
           <p>${shippingRate.toFixed(2)}</p>
         </div>
-      )}
+      )} */}
     </div>
   );
 }

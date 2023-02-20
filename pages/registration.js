@@ -21,12 +21,12 @@ export default function Registration() {
     <Format>
       <section
         className='container mx-auto md:px-2 py-16 w-1/2 bg-cover bg-right'
-        style={{ backgroundImage: "url('/images/iim.jpg')" }}
+        style={{ backgroundImage: "url('/images/img5.jpg')" }}
       >
         {/* <Author /> */}
 
         <div className='post py-10'>
-          <h1 className='font-bold text-4xl text-center pb-5 text-white'>
+          <h1 className='font-bold text-gray-500 text-4xl text-center pb-5 '>
             Cargo Registration
           </h1>
 
